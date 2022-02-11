@@ -1,6 +1,6 @@
 #!/bin/bash
-BSNES=0
-QUSB2SNES=0
+BSNES=1
+QUSB2SNES=1
 ALTTPTRACKER=1
 
 sudo mkdir /opt/ffaadd 2>/dev/null
