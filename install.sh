@@ -6,6 +6,8 @@ ALTTPTRACKER=1
 sudo mkdir /opt/ffaadd 2>/dev/null
 sudo chown pi:pi /opt/ffaadd
 
+cp ./start.sh /opt/ffaadd
+cp -r ./patchfiles /opt/ffaadd/
 cd /opt/ffaadd
 
 if [ "$PWD" != "/opt/ffaadd" ]; then	
