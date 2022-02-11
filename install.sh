@@ -25,6 +25,7 @@ if [ $BSNES = 1 ]; then
 	sudo patch -N /opt/retropie/configs/snes/emulators.cfg ../patchfiles/emulators.patch 
 fi
 
+cd /opt/ffaadd
 if [ $QUSB2SNES = 1 ]; then
 	sudo apt install qt5-qmake libqt5websockets5-dev libqt5serialport5-dev
 	git clone https://github.com/Skarsnik/QUsb2snes.git
@@ -42,6 +43,11 @@ if [ $QUSB2SNES = 1 ]; then
 	make
 fi
 
+cd /opt/ffaadd
 if [ $ALTTPTRACKER = 1 ]; then
 	git clone https://github.com/bigdunka/alttptracker.git
 fi
+
+cd /opt/ffaadd/
+sudo patch -N /opt/retropie/configs/all/autostart.sh ./patchfiles/autostart.patch
+

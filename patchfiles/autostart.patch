@@ -1,0 +1,5 @@
+--- autostart.sh.1	2022-02-11 02:46:51.774833144 +0000
++++ autostart.sh	2022-02-11 02:06:57.780245694 +0000
+@@ -1 +1,2 @@
++/bin/bash /opt/ffaadd/start.sh
+ emulationstation #auto
