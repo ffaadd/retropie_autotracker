@@ -46,6 +46,7 @@ fi
 cd /opt/ffaadd
 if [ $ALTTPTRACKER = 1 ]; then
 	git clone https://github.com/bigdunka/alttptracker.git
+	patch -N /opt/ffaadd/alttptracker/js/autot.js /opt/ffaadd/patchfiles/autotracker.patch
 fi
 
 cd /opt/ffaadd/

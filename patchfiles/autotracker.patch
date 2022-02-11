@@ -1,0 +1,11 @@
+--- autot.js.1	2022-02-11 11:51:08.573988283 +0000
++++ autot.js	2022-02-11 11:52:24.834196788 +0000
+@@ -23,7 +23,7 @@
+     document.getElementById("autotrackingstatus").textContent = "Autotracking Status: " + text;
+ }
+ 
+-function autotrackConnect(host="ws://localhost:" + flags.trackingport) {
++function autotrackConnect(host="ws://retropie:" + flags.trackingport) {
+     if (autotrackSocket !== null || autotrackReconnectTimer !== null) {
+         autotrackDisconnect();
+         return;
