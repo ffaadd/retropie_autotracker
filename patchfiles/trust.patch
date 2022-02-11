@@ -1,0 +1,12 @@
+--- main.cpp.1	2022-02-11 01:14:54.018377267 +0000
++++ main.cpp	2022-02-11 00:48:22.224348886 +0000
+@@ -218,7 +218,8 @@
+     qInfo() << "Runing QUsb2Snes version " << qApp->applicationVersion();
+     qInfo() << "Compiled against Qt" << QT_VERSION_STR << ", running" << qVersion();
+     // let set some know trusted domain
+-    wsServer.addTrusted("http://www.multitroid.com");
++    wsServer.addTrusted("https://alttprtracker.dunka.net");
++    wsServer.addTrusted("http://retropie:8000");
+     wsServer.addTrusted("http://multitroid.com");
+     wsServer.addTrusted("https://multiworld.samus.link/");
+     wsServer.addTrusted("http://usb2snes.com");
